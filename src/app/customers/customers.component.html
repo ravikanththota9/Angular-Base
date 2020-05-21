@@ -1,0 +1,12 @@
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link {{downloadLink}}" routerLink="/customers/download-spec" (click)="onDownloadSelectTab()" href="#">Download Jury Files</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link  {{uploadLink}} " routerLink="/customers/upload-spec" (click)="onUploadSelectTab()" href="#">Upload Jury Files </a>
+  </li>
+  
+</ul>
+
+<router-outlet></router-outlet>
+

@@ -1,0 +1,322 @@
+<div class="container-fluid">
+
+  <!-- Content Row -->
+  <div class="row">
+
+      <!-- Earnings (Monthly) Card Example -->
+      <div class="col-xl-3 col-md-6 mb-2">
+          <div class="card border-bottom-primary shadow h-100 py-2">
+              <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                          <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Active projects
+                          </div>
+                          <div class="row no-gutters align-items-center">
+                              <div class="col-auto">
+                                  <div class="h5 mb-0 mr-3 font-weight-bold text-primary">1800</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-auto">
+                          <i class="fas fa-briefcase fa-2x text-primary"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Earnings (Monthly) Card Example -->
+      <div class="col-xl-3 col-md-6 mb-2">
+          <div class="card border-bottom-success shadow h-100 py-2">
+              <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                          <div class="text-xs font-weight-bold text-success text-uppercase mb-1">On track
+                          </div>
+                          <div class="row no-gutters align-items-center">
+                              <div class="col-auto">
+                                  <div class="h5 mb-0 mr-3 font-weight-bold text-success">240</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-auto">
+                          <i class="fas fa-calendar-alt fa-2x text-success"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Earnings (Monthly) Card Example -->
+      <div class="col-xl-3 col-md-6 mb-2">
+          <div class="card border-bottom-danger shadow h-100 py-2">
+              <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                          <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">In Risk
+                          </div>
+                          <div class="row no-gutters align-items-center">
+                              <div class="col-auto">
+                                  <div class="h5 mb-0 mr-3 font-weight-bold text-danger">50</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-auto">
+                          <i class="fas fa-exclamation-triangle fa-2x text-danger"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Pending Requests Card Example -->
+      <div class="col-xl-3 col-md-6 mb-2">
+          <div class="card border-bottom-dark shadow h-100 py-2">
+              <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                          <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">Contractors
+                          </div>
+                          <div class="row no-gutters align-items-center">
+                              <div class="col-auto">
+                                  <div class="h5 mb-0 mr-3 font-weight-bold text-dark">3560</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-auto">
+                          <i class="fas fa-users fa-2x text-dark"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+    
+    <div class="col-lg-6">
+      <div class="card shadow mb-2">
+        <!-- Card Header - Accordion -->
+        <a href="#projectProgress" class="d-block card-header py-2" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="projectProgress">
+          <h6 class="m-0 font-weight-bold text-primary">Projects Progress</h6>
+        </a>
+        <!-- Card Content - Collapse -->
+        <div class="collapse show" id="projectProgress">
+          <div class="card-body widget">
+            <canvas
+                baseChart
+                [chartType]="'bar'"
+                [datasets]="chartData"
+                [labels]="chartLabels"
+                [options]="chartOptions"
+                [legend]="false">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="card shadow mb-2">
+        <!-- Card Header - Accordion -->
+        <a href="#projectProgress" class="d-block card-header py-2" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="projectProgress">
+          <h6 class="m-0 font-weight-bold text-primary">Projects Financials</h6>
+        </a>
+        <!-- Card Content - Collapse -->
+        <div class="collapse show" id="projectProgress">
+          <div class="card-body widget">
+            <canvas
+                baseChart
+                [chartType]="'bar'"
+                [datasets]="chartData"
+                [labels]="chartLabels"
+                [options]="chartOptions"
+                [legend]="false">
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row flex-nowrap overflow-auto">
+
+    <div class="col-lg-4">
+      <div class="card shadow mb-2">
+          <div class="collapse show">
+            <div class="card-body p-0">
+              <div class="bg-primary text-center text-white pt-3 pb-2 position-relative project-short-description">
+                  <h6><strong>Project ID: PR4567</strong></h6>
+                  <h6><strong>Project Name: PROJECT</strong></h6>
+                  <h6><strong>Project Manager Name: Tom</strong></h6>
+                  <h6><strong>Customer: PR4567</strong></h6>
+                  <h6><strong>Location: Novato</strong></h6>
+                  <h6><strong>Status: </strong><span class="badge badge-success">On Track</span></h6>
+                  <h6><strong>Estimated Budget Remaining: $4567</strong></h6>
+                  <h6><strong>Project Start Date: 20 May 2020</strong></h6>
+                  <h6><strong>Project End Date: 20 June 2020</strong></h6>
+                  <div class="position-absolute text-center align-items-center justify-content-center project-view-link text-center">
+                    <a href="">View Project <i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card shadow mb-2">
+          <div class="collapse show">
+            <div class="card-body p-0">
+              <div class="bg-primary text-center text-white pt-3 pb-2 position-relative project-short-description">
+                  <h6><strong>Project ID: PR4567</strong></h6>
+                  <h6><strong>Project Name: PROJECT</strong></h6>
+                  <h6><strong>Project Manager Name: Tom</strong></h6>
+                  <h6><strong>Customer: PR4567</strong></h6>
+                  <h6><strong>Location: Novato</strong></h6>
+                  <h6><strong>Status: </strong><span class="badge badge-success">On Track</span></h6>
+                  <h6><strong>Estimated Budget Remaining: $4567</strong></h6>
+                  <h6><strong>Project Start Date: 20 May 2020</strong></h6>
+                  <h6><strong>Project End Date: 20 June 2020</strong></h6>
+                  <div class="position-absolute text-center align-items-center justify-content-center project-view-link text-center">
+                    <a href="">View Project <i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card shadow mb-2">
+          <div class="collapse show">
+            <div class="card-body p-0">
+              <div class="bg-primary text-center text-white pt-3 pb-2 position-relative project-short-description">
+                  <h6><strong>Project ID: PR4567</strong></h6>
+                  <h6><strong>Project Name: PROJECT</strong></h6>
+                  <h6><strong>Project Manager Name: Tom</strong></h6>
+                  <h6><strong>Customer: PR4567</strong></h6>
+                  <h6><strong>Location: Novato</strong></h6>
+                  <h6><strong>Status: </strong><span class="badge badge-success">On Track</span></h6>
+                  <h6><strong>Estimated Budget Remaining: $4567</strong></h6>
+                  <h6><strong>Project Start Date: 20 May 2020</strong></h6>
+                  <h6><strong>Project End Date: 20 June 2020</strong></h6>
+                  <div class="position-absolute text-center align-items-center justify-content-center project-view-link text-center">
+                    <a href="">View Project <i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card shadow mb-2">
+          <div class="collapse show">
+            <div class="card-body p-0">
+              <div class="bg-primary text-center text-white pt-3 pb-2 position-relative project-short-description">
+                  <h6><strong>Project ID: PR4567</strong></h6>
+                  <h6><strong>Project Name: PROJECT</strong></h6>
+                  <h6><strong>Project Manager Name: Tom</strong></h6>
+                  <h6><strong>Customer: PR4567</strong></h6>
+                  <h6><strong>Location: Novato</strong></h6>
+                  <h6><strong>Status: </strong><span class="badge badge-success">On Track</span></h6>
+                  <h6><strong>Estimated Budget Remaining: $4567</strong></h6>
+                  <h6><strong>Project Start Date: 20 May 2020</strong></h6>
+                  <h6><strong>Project End Date: 20 June 2020</strong></h6>
+                  <div class="position-absolute text-center align-items-center justify-content-center project-view-link text-center">
+                    <a href="">View Project <i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card shadow mb-2">
+          <div class="collapse show">
+            <div class="card-body p-0">
+              <div class="bg-primary text-center text-white pt-3 pb-2 position-relative project-short-description">
+                  <h6><strong>Project ID: PR4567</strong></h6>
+                  <h6><strong>Project Name: PROJECT</strong></h6>
+                  <h6><strong>Project Manager Name: Tom</strong></h6>
+                  <h6><strong>Customer: PR4567</strong></h6>
+                  <h6><strong>Location: Novato</strong></h6>
+                  <h6><strong>Status: </strong><span class="badge badge-success">On Track</span></h6>
+                  <h6><strong>Estimated Budget Remaining: $4567</strong></h6>
+                  <h6><strong>Project Start Date: 20 May 2020</strong></h6>
+                  <h6><strong>Project End Date: 20 June 2020</strong></h6>
+                  <div class="position-absolute text-center align-items-center justify-content-center project-view-link text-center">
+                    <a href="">View Project <i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="card shadow mb-2">
+          <div class="collapse show">
+            <div class="card-body p-0">
+              <div class="bg-primary text-center text-white pt-3 pb-2 position-relative project-short-description">
+                  <h6><strong>Project ID: PR4567</strong></h6>
+                  <h6><strong>Project Name: PROJECT</strong></h6>
+                  <h6><strong>Project Manager Name: Tom</strong></h6>
+                  <h6><strong>Customer: PR4567</strong></h6>
+                  <h6><strong>Location: Novato</strong></h6>
+                  <h6><strong>Status: </strong><span class="badge badge-success">On Track</span></h6>
+                  <h6><strong>Estimated Budget Remaining: $4567</strong></h6>
+                  <h6><strong>Project Start Date: 20 May 2020</strong></h6>
+                  <h6><strong>Project End Date: 20 June 2020</strong></h6>
+                  <div class="position-absolute text-center align-items-center justify-content-center project-view-link text-center">
+                    <a href="">View Project <i class="fas fa-angle-double-right"></i></a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+  </div>
+
+  <!-- Content Row -->
+  <div class="row">
+    <div class="col-xl-7">
+        <div class="card shadow mb-2">
+            <!-- Card Header - Accordion -->
+            <a href="#map" class="d-block card-header py-2" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="map">
+                <h6 class="m-0 font-weight-bold text-primary">Map</h6>
+            </a>
+            <!-- Card Content - Collapse -->
+            <div class="collapse show" id="map">
+                <div class="card-body widget p-0">
+                        <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.294899169216!2d-74.01454923473257!3d40.71152417933199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a19881b83fb%3A0x979b0a4fe0492ce6!2sWorld%20Trade%20Center%2C%20New%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1589535183653!5m2!1sen!2sin"
+                        width="100%" height="343" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-5">
+      <div class="card shadow mb-2">
+          <!-- Card Header - Accordion -->
+          <a href="#projectReport" class="d-block card-header py-2" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="projectReport">
+              <h6 class="m-0 font-weight-bold text-primary">Project Report</h6>
+          </a>
+          <!-- Card Content - Collapse -->
+          <div class="collapse show" id="projectReport">
+              <div class="card-body widget">
+                <ag-grid-angular
+                style="width: 100%; height: 330px;"
+                class="ag-theme-alpine"
+                [rowData]="rowData"
+                [columnDefs]="columnDefs"
+                >
+            </ag-grid-angular>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</div>

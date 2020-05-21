@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <br>
+    Upload jury related files . Ex: Specifications , Acknowledgements, Efiles etc
+    <br>
+    <br>
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <div class="d-flex">
+                  <h1 class="h3 mb-0 text-gray-800">Select Jury</h1>
+                  <div class="pl-4 min-width-200">
+                      <ng-select [items]="projects"
+                          bindLabel="name"
+                          placeholder="Select"
+                          [(ngModel)]="selectedProject">
+                      </ng-select>
+                  </div>
+            </div>
+        </div>
+       
+        <form>
+            <!-- <div class="form-group">
+              <label for="exampleInputEmail1">Description</label>
+              <input type="textarea" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter file description">             
+            </div> -->
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Upload file</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <small id="emailHelp" class="form-text text-muted">Upload jury related files</small>
+            </div> 
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+</div>
